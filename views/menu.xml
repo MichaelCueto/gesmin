@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_pdf_root" name="PDF Processor" sequence="10"/>
+    <menuitem id="menu_pdf_documents" name="Documentos PDF" parent="menu_pdf_root" action="action_pdf_document" sequence="20"/>
+</odoo>

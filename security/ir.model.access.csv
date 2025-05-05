@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pdf_document,pdf.document,model_pdf_document,base.group_user,1,1,1,1
+access_pdf_process_wizard,pdf.process.wizard,model_pdf_process_wizard,base.group_user,1,0,1,0
