@@ -5,12 +5,12 @@
         <field name="name">pdf.document.tree</field>
         <field name="model">pdf.document</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="name" string="Nombre"/>
                 <field name="filename" string="Archivo"/>
                 <field name="processed" string="Procesado" widget="boolean"/>
                 <field name="process_date" string="Fecha"/>
-            </tree>
+            </list>
         </field>
     </record>
 
