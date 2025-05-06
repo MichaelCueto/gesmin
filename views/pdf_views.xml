@@ -44,8 +44,7 @@
                     <button name="action_process_pdf" 
                             type="object" 
                             string="Procesar PDF" 
-                            class="oe_highlight"
-                            attrs="{'invisible': [('processed', '=', True)]}"/>
+                            class="oe_highlight"/>
                 </div>
             </form>
         </field>

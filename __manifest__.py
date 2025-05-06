@@ -13,8 +13,12 @@
         'views/pdf_views.xml',
         'views/wizard_views.xml',
         'views/menu.xml',
+        'views/folder_views.xml',
         'controllers/main.xml',
     ],
+    'external_dependencies': {
+    'python': ['pymongo', 'pdf2image', 'pytesseract']
+    },
     'installable': True,
     'application': True,
     'license': 'LGPL-3',

@@ -8,8 +8,8 @@
             <form>
                 <group>
                     <field name="batch_process"/>
-                    <field name="pdf_id" attrs="{'invisible': [('batch_process', '=', True)]}"/>
-                    <field name="pdf_ids" attrs="{'invisible': [('batch_process', '=', False)]}"/>
+                    <field name="pdf_id"/>
+                    <field name="pdf_ids"/>
                 </group>
                 
                 <footer>

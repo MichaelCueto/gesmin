@@ -1,6 +1,7 @@
 import os
 import tempfile
 import subprocess
+import base64
 from odoo import models, fields, api, _
 
 class PdfProcessWizard(models.TransientModel):
@@ -56,7 +57,7 @@ class PdfProcessWizard(models.TransientModel):
                 
                 # Guardar el PDF en temporal
                 with open(pdf_path, 'wb') as f:
-                    f.write(pdf.file.decode('base64'))
+                    f.write(base64.b64decode(pdf.file))
                 
                 # Ejecutar script de procesamiento
                 script_path = os.path.join(

@@ -10,6 +10,7 @@ class PdfDocument(models.Model):
     json_output = fields.Text('Salida JSON')
     processed = fields.Boolean('Procesado', default=False)
     process_date = fields.Datetime('Fecha de Procesamiento')
+    folder_id = fields.Many2one('pdf.folder', string='Carpeta')
     
     def action_process_pdf(self):
         self.ensure_one()
