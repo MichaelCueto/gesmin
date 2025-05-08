@@ -35,7 +35,7 @@
 
                     <notebook>
                         <page string="Resultado JSON">
-                            <field name="json_output" widget="ace" options="{'mode': 'json'}"/>
+                            <field name="json_output" widget="ace" options="{'lenguage': 'json'}"/>
                         </page>
                     </notebook>
                 </sheet>
@@ -54,6 +54,7 @@
     <record id="action_pdf_document" model="ir.actions.act_window">
         <field name="name">Documentos PDF</field>
         <field name="res_model">pdf.document</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
+        <field name="target">current</field>
     </record>
 </odoo>
